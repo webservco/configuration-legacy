@@ -54,18 +54,14 @@ final class Cfg
         return $configurationGetter->getString($key);
     }
 
-    public static function processConfigurationFile(
-        string $projectPath,
-        string $configurationDirectory = 'config',
-        string $configurationFile = '.env.ini',
-    ): bool {
+    public static function processConfigurationFile(string $projectPath, string $configurationDirectory = 'config', string $configurationFile = '.env.ini'): bool
+    {
         $configurationContainer = new IniServerConfigurationContainer();
         $configurationFileProcessor = new ConfigurationFileProcessor(
             $configurationContainer->getConfigurationDataProcessor(),
             $configurationContainer->getConfigurationLoader(),
             $configurationContainer->getConfigurationSetter(),
         );
-
         return $configurationFileProcessor->processConfigurationFile(
             $projectPath,
             $configurationDirectory,
