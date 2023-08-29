@@ -25,6 +25,9 @@ final class Cfg
     }
 
     /**
+     * If possible use an object-oriented approach and avoid using this helper method
+     * (it creates a ConfigurationGetterInterface object on each call)
+     *
      * @return array<int,bool|float|int|string|null>
      */
     public static function getArray(string $key): array
@@ -34,6 +37,10 @@ final class Cfg
         return $configurationGetter->getArray($key);
     }
 
+    /**
+     * If possible use an object-oriented approach and avoid using this helper method
+     * (it creates a ConfigurationGetterInterface object on each call)
+     */
     public static function getBool(string $key): bool
     {
         $configurationGetter = self::createConfigurationGetter();
@@ -42,8 +49,17 @@ final class Cfg
     }
 
     /**
-     * getString
-     *
+     * If possible use an object-oriented approach and avoid using this helper method
+     * (it creates a ConfigurationGetterInterface object on each call)
+     */
+    public static function getInt(string $key): int
+    {
+        $configurationGetter = self::createConfigurationGetter();
+
+        return $configurationGetter->getInt($key);
+    }
+
+    /**
      * If possible use an object-oriented approach and avoid using this helper method
      * (it creates a ConfigurationGetterInterface object on each call)
      */
