@@ -26,7 +26,7 @@
     "name" : "webservco/configuration-legacy",
     "require": {
         "php" : "^8.4",
-	    "webservco/configuration": "^1"
+	    "webservco/configuration": "^2"
     },
     "require-dev": {
         "pds/skeleton": "^1",
