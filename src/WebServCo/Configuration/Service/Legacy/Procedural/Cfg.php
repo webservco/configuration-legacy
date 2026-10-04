@@ -73,7 +73,7 @@ final class Cfg
     public static function processConfigurationFile(
         string $projectPath,
         string $configurationDirectory = 'config',
-        string $configurationFile = '.env.ini',
+        string $configurationFile = '.env.ini'
     ): bool {
         $configurationContainer = new IniServerConfigurationContainer();
         $configurationFileProcessor = new ConfigurationFileProcessor(
