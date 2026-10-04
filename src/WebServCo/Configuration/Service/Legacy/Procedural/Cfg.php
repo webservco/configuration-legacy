@@ -40,6 +40,8 @@ final class Cfg
     /**
      * If possible use an object-oriented approach and avoid using this helper method
      * (it creates a ConfigurationGetterInterface object on each call)
+     *
+     * @SuppressWarnings("PHPMD.BooleanGetMethodName")
      */
     public static function getBool(string $key): bool
     {
