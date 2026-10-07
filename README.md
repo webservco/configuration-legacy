@@ -4,10 +4,8 @@ Helper for legacy projects that have to use a procedural approach.
 
 ## Setup
 
-Composer require:
-
-```json
-"webservco/configuration-legacy": "^0"
+```shell
+composer require webservco/configuration-legacy
 ```
 
 ## Usage
