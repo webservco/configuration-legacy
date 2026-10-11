@@ -20,7 +20,7 @@
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
-    "description" : "A PHP component/library.",
+    "description" : "A PHP component/library. Static configuration helper for legacy procedural code that can't easily receive objects.",
     "homepage" : "https://webserv.co",
     "keywords" : [
         "component",
